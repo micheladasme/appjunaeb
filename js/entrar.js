@@ -12,7 +12,8 @@
       type: 'post',
       data: parametros,
       error: function(){
-        alert("Ocurrio un Error");
+        $('#net').trigger('click');
+        $.mobile.loading('hide');
         //$("#error").html("Oops! ocurrió un error....");
       },
       beforeSend: function(){
@@ -43,7 +44,8 @@
         }
         else{
           
-         $('#pop').trigger('click'); 
+         $('#pop').trigger('click');
+          
         } 
       
        
