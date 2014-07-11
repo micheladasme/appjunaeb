@@ -43,8 +43,7 @@
         }
         else{
           
-         $('#pop').trigger('click');
-          
+         $('#pop').trigger('click'); 
         } 
       
        
