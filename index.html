@@ -30,23 +30,7 @@
         }
         
 
-    // Wait for device API libraries to load
-    //
-    function onLoad() {
-        document.addEventListener("deviceready", onDeviceReady, false);
-    }
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        document.addEventListener("offline", onOffline, false);
-    }
-
-    // Handle the offline event
-    //
-    function onOffline() {
-      $('#net').trigger('click');
-    }
+    
 
       
       </script>
@@ -54,7 +38,7 @@
   <link rel="stylesheet" type="text/css" href="css/pagina2.css">
 
 </head>
-<body onload="onLoad()">
+<body>
   <!-- Login -->
   <div data-role="page" id="pag1">
      <div data-role="header" data-theme="a">
@@ -90,7 +74,7 @@
 </div>
 
 
-       <a href="#popupDialog2" id="net" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-b" style="display:none;">Error Net</Ne>
+       <a href="#popupDialog2" id="net" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-b" style="display:none;">Error Net</a>
 <div data-role="popup" id="popupDialog2" data-overlay-theme="a" data-theme="a" style="max-width:400px;">
     <div data-role="header" data-theme="d">
     <h1>Sin Conexión</h1>
